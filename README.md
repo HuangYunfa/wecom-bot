@@ -107,6 +107,12 @@ GET /session/<user_id>
 DELETE /session/<user_id>
 ```
 
+### 企业微信回调
+
+```
+POST /wecom/callback
+```
+
 ## 特殊命令
 
 用户可以发送以下命令清除对话历史：
