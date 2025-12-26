@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  wecom-bot:
+    build: .
+    container_name: wecom-bot
+    ports:
+      - "8092:5000"
+    env_file:
+      - .env
+    restart: unless-stopped
+
+# 注意：
+# - Redis 配置在 .env 文件中指定（使用阿里云 Redis）
+# - 不需要在此处启动 Redis 容器
+# - 如需使用本地 Docker Redis，取消下面的注释
+
+#  redis:
+#    image: redis:7-alpine
+#    container_name: wecom-redis
+#    ports:
+#      - "6379:6379"
+#    volumes:
+#      - redis_data:/data
+#    command: redis-server --appendonly yes
+#    restart: unless-stopped
+#
+#volumes:
+#  redis_data:

@@ -1,0 +1,37 @@
+# Flask Web Framework
+flask==3.1.0
+gunicorn==23.0.0
+
+# LangChain and AI Integration
+langchain==1.0.4
+langchain-classic==1.0.0
+langchain-community==0.4.1
+langchain-core==1.0.3
+langchain-openai==1.0.2
+langchain-text-splitters==1.0.0
+langgraph==1.0.2
+langgraph-checkpoint==3.0.1
+langgraph-prebuilt==1.0.2
+langgraph-sdk==0.2.9
+langsmith==0.4.41
+
+# DashScope for Qwen
+dashscope==1.20.0
+
+# OpenAI SDK (required by langchain-openai>=1.109.1)
+openai==1.109.1
+
+# Redis for conversation history persistence
+redis==5.2.0
+
+# XML parsing
+lxml==5.3.0
+
+# Cryptography for message encryption/decryption
+pycryptodome==3.21.0
+
+# HTTP requests
+requests==2.32.5
+
+# Environment variables
+python-dotenv==1.0.1
